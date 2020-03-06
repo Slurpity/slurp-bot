@@ -1,0 +1,2 @@
+# slurp-bot
+Discord Bot
