@@ -15,22 +15,22 @@ bot.on('message', message => {
 
     switch (args[0]) {
         case 'website':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             message.channel.send('https://www.coolmathgames.com/')
             break;
 
         case 'info':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             message.channel.send('Version ' + version);
             break;
 
         case 'prefix':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             message.channel.send(PREFIX)
             break;
 
         case 'purge':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             if (!message.member.hasPermission("MANAGE_MESSAGES", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             if (!args[1]) return message.channel.send('Please send an amount of messages to delete!')
             message.channel.bulkDelete(args[1]);
@@ -38,7 +38,7 @@ bot.on('message', message => {
             break;
 
         case 'kick':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             if (!message.member.hasPermission("KICK_MEMBERS", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             var user = message.mentions.users.first();
             if (user) {
@@ -60,7 +60,7 @@ bot.on('message', message => {
             break;
 
         case 'ban':
-            if (!message.content.startsWith('.')) return;
+            if (!message.content.startsWith(';')) return;
             if (!message.member.hasPermission("BAN_MEMBERS", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             var user = message.mentions.users.first();
             if (user) {
