@@ -1,9 +1,7 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
-const token = 'Njg1MzAzMjUxMDcxMjcwOTI3.XmMv6w.SLsfca4hx7NtmHjof0NXOxcenDA'
 var version = '0.420.69'
 const PREFIX = ';';
-
 
 bot.on('ready', () => {
     console.log('Slurp Bot is now online!');
@@ -11,7 +9,7 @@ bot.on('ready', () => {
 
 bot.on('message', message => {
 
-    let args = message.content.substring(PREFIX.length).split(" ");
+    let args = message.content.toLowerCase().substring(PREFIX.length).split(" ");
 
     switch (args[0]) {
         case 'website':
@@ -76,6 +74,22 @@ bot.on('message', message => {
             } else {
                 message.channel.send('You need to specify a person!');
             }
+            break;
+        
+        case 'creator':
+            if (!message.content.startsWith(';')) return;
+            message.channel.send('Hi, I am Slurpity. I made Slurp-Bot because I was bored lol. Add me! Slurpity#4020');
+            break;
+        
+        case 'killmenow':
+            if (!message.content.startsWith(';')) return;
+            message.channel.send('``The US national suicide prevention lifeline is`` **1-800-273-8255**')
+            break;
+
+        case 'ching':
+            if (!message.content.startsWith(';')) return;
+            if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
+            message.channel.send('Chong!');
             break;
     }
 })
