@@ -98,7 +98,7 @@ bot.on('message', message => {
             var embed = new Discord.MessageEmbed()
             .setTitle('Team Cyx Socials')
             .addField('Youtube', 'https://www.youtube.com/channel/UCpkAPRxke-HCYDafJEkc2Aw')
-            .addField('Instagram', 'https://www.instagram.com/stories/officialcyx/')
+            .addField('Instagram', 'https://www.instagram.com/official.cyx/')
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
