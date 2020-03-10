@@ -91,6 +91,18 @@ bot.on('message', message => {
             if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             message.channel.send('Chong!');
             break;
+
+        case 'merkthebeaner':
+            if (!message.content.startsWith(';')) return;
+            if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
+            message.channel.send('Noah the beaner has been merked!')
+            break;
+        
+        case 'darrinthesexy':
+            if (!message.content.startsWith(';')) return;
+            if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
+            message.channel.send('**Darrin is the most sexy man alive - hasn**')
+            break;
     }
 })
 
