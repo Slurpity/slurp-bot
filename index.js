@@ -103,6 +103,11 @@ bot.on('message', message => {
             if (!message.member.hasPermission("ADMINISTRATOR", explicit = true)) return message.channel.send('You do not have permission to execute this command!')
             message.channel.send('**Darrin is the most sexy man alive - hasn**')
             break;
+        case 'socials':
+            if (!message.content.startsWith('.')) return;
+            message.channel.send('Youtube - https://www.youtube.com/channel/UCpkAPRxke-HCYDafJEkc2Aw')
+            message.channel.send('Instagram - ')
+            break;
     }
 })
 
