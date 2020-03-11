@@ -1,5 +1,6 @@
 const Discord = require('discord.js');
 const bot = new Discord.Client();
+const token = 'Njg1NjI5MjE5NzQ4ODM5NDI5.XmLcEw.yrsccFWbOIIRQdAze5N5VHifJng';
 var version = '0.420.69'
 const PREFIX = ';';
 
@@ -42,7 +43,7 @@ bot.on('message', message => {
                     member.kick('You have been kicked from this server!').then(() => {
                         message.reply(`Successfully kicked ${user.tag}`);
                     }).catch(err => {
-                        message.reply('I was unable to kick the member :(');
+                        message.channel.send('I was unable to kick the member :(');
                         console.log(err);
                     });
                 } else {
@@ -61,8 +62,11 @@ bot.on('message', message => {
 
                 if (member) {
                    member.ban({reason: 'You have been banned from this Discord server!'}).then(() =>{
-                        message.channel.send(`Successfully banned ${user.tag}`)
-                   }) 
+                        message.channel.send(`Successfully banned ${user.tag}`);
+                   }).catch(err => {
+                       message.channel.send('I was unable to ban the member :(');
+                       console.log(err);
+                   });
                 } else {
                     message.reply('That person is not in the server!')
                 }
@@ -102,7 +106,8 @@ bot.on('message', message => {
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
+        
     }
 })
 
-bot.login(process.env.BOT_TOKEN);
+bot.login(tprocess.env.BOT_TOKEN);
