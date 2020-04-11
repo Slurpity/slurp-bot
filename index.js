@@ -20,7 +20,7 @@ bot.on('message', message => {
             message.channel.send(args[1] + ' messages have been deleted!')
             break;
 
-        case 'socials':
+        case 'ip':
             var embed = new Discord.MessageEmbed()
             .setTitle('DragonAgePvP')
             .addField('Server IP', 'ip goes here')
