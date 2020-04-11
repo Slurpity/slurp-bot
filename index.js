@@ -28,6 +28,15 @@ bot.on('message', message => {
             .setColor(0x77DDDD)
             message.channel.send(embed);
             break;
+            
+        case 'links':
+            var embed = new Discord.MessageEmbed()
+            .setTitle('Website')
+            .addField('Forums', 'link to forums')
+            .addField('Store', 'Link to store')
+            .setColor(0x77DDDD)
+            message.channel.send(embed);
+            break;
         
     }
 })
