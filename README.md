@@ -1,2 +1,2 @@
-# slurp-bot
+# DragonAgeMc
 Discord Bot
