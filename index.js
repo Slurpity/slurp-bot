@@ -38,6 +38,17 @@ bot.on('message', message => {
             message.channel.send(embed);
             break;
         
+           
+        case 'help':
+            var embed = new Discord.MessageEmbed()
+            .setTitle('Commands')
+            .addField('Help', 'Shows you this menu')
+            .addField('IP', 'Shows the server IP, Version, and players online!')
+            .addField('Links', 'Links you to our store and forums!')
+            .addField('Purge', 'Deletes "x" amount of messages. Format: ;purge (messages to be deleted)')
+            .setColor(0x77DDDD)
+            message.channel.send(embed);
+            break;
     }
 })
 
