@@ -24,7 +24,7 @@ bot.on('message', message => {
             .setTitle('DragonAgePvP')
             .addField('Server IP', 'ip goes here')
             .addField('Versions', '1.8 - 1.12.2')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;
             
@@ -32,7 +32,7 @@ bot.on('message', message => {
             var embed = new Discord.MessageEmbed()
             .setTitle('DragonAgePvP Store')
             .addField('Store', 'Link to store goes here')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;
            
@@ -46,7 +46,7 @@ bot.on('message', message => {
             .addField('.Apply', 'Links you to the forums apply section, and states you can apply in the Discord as well')
             .addField('.Report', 'Links you to the forums where you can report bugs/players')
             .addField('.Support', 'Directs you to the channel to get support from the staff team')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;
             
@@ -54,7 +54,7 @@ bot.on('message', message => {
             var embed = new Discord.MessageEmbed()
             .setTitle('DragonAgePvP Forums')
             .addField('Forums', 'link to forums')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;
             
@@ -63,7 +63,7 @@ bot.on('message', message => {
             .setTitle('Apply Here!')
             .addField('Application Link', 'link to forums')
             .addField('Alternatively,', 'You may also apply in <#699027600936271908>')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;            
             
@@ -71,7 +71,7 @@ bot.on('message', message => {
             var embed = new Discord.MessageEmbed()
             .setTitle('Report players and bugs on our Forums!')
             .addField('Link to report players/bugs', 'link to forums to report')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;
             
@@ -79,7 +79,7 @@ bot.on('message', message => {
             var embed = new Discord.MessageEmbed()
             .setTitle('Support')
             .addField('Where to find support?', 'Head on over to <#698392385071218795> to create a support ticket!')
-            .setColor(0x77DDDD)
+            .setColor(0xad0903)
             message.channel.send(embed);
             break;            
             
