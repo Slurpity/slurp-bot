@@ -22,7 +22,7 @@ bot.on('message', message => {
         case 'ip':
             var embed = new Discord.MessageEmbed()
             .setTitle('DragonAgePvP')
-            .addField('Server IP', 'ip goes here')
+            .addField('Server IP', 'dragonagepvp.net')
             .addField('Versions', '1.8 - 1.12.2')
             .setColor(0xad0903)
             message.channel.send(embed);
